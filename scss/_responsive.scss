@@ -1,0 +1,37 @@
+/*MEDIA QUERY*/
+
+@include media-md {
+  .menu-btn {
+    visibility: hidden;
+  }
+
+  .nav-bar {
+    visibility: visible;
+    transform: translatex(0%);
+    opacity: 1;
+  }
+  .menu-nav {
+    display: block;
+    transform: translatex(0);
+    height: 100%;
+    width: 50%;
+    background: transparent;
+    text-align: right;
+    visibility: visible;
+  }
+
+  .menu-nav__item {
+    display: inline;
+    padding-right: 1.5rem;
+    transform: translatey(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .menu-nav__link {
+    display: inline;
+    font-size: 1.5rem;
+    visibility: visible;
+    opacity: 1;
+  }
+}
