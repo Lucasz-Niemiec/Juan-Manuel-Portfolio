@@ -1,4 +1,5 @@
-@import "config", "home", "menu", "responsive", "about", "contact", "projects";
+@import "config", "home", "menu", "about", "contact", "projects";
+
 /* MAIN STYLES */
 body {
   color: set-text-color($primary-color);
@@ -46,6 +47,13 @@ main {
       &:hover {
         color: $secondary-color;
       }
+      & &:focus {
+        color: $secondary-color;
+        opacity: 0.8;
+        outline: 3px solid;
+
+        padding: 0.1rem;
+      }
     }
   }
 }
@@ -60,3 +68,4 @@ footer {
   padding: 1rem;
   color: set-text-color($primary-color);
 }
+@import "responsive";

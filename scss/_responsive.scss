@@ -1,6 +1,10 @@
 /*MEDIA QUERY*/
 
 @include media-md {
+  header {
+    position: absolute;
+    text-align: right;
+  }
   .menu-btn {
     visibility: hidden;
   }
@@ -9,29 +13,83 @@
     visibility: visible;
     transform: translatex(0%);
     opacity: 1;
-  }
-  .menu-nav {
-    display: block;
-    transform: translatex(0);
-    height: 100%;
-    width: 50%;
-    background: transparent;
-    text-align: right;
-    visibility: visible;
+    position: absolute;
+    top: 1rem;
+
+    & .menu-nav {
+      display: block;
+      transform: translatex(0);
+      height: 100%;
+
+      background: transparent;
+      text-align: right;
+      visibility: visible;
+    }
+
+    & .menu-nav__item {
+      display: inline;
+      padding-right: 1.5rem;
+      transform: translatey(0);
+      opacity: 1;
+      visibility: visible;
+    }
+
+    & .menu-nav__link {
+      display: inline;
+      font-size: 1.3rem;
+      visibility: visible;
+      opacity: 1;
+    }
   }
 
-  .menu-nav__item {
-    display: inline;
-    padding-right: 1.5rem;
-    transform: translatey(0);
-    opacity: 1;
-    visibility: visible;
-  }
-
-  .menu-nav__link {
-    display: inline;
+  .about__bio {
     font-size: 1.5rem;
-    visibility: visible;
-    opacity: 1;
+    &-image {
+      height: 60vh;
+      @include transition-ease;
+    }
+  }
+
+  .projects {
+    &__bio-image {
+      height: 60vh;
+      @include transition-ease;
+    }
+
+    &__items {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .text-secondary {
+      font-size: 3rem;
+    }
+  }
+
+  .contact__list {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+  }
+}
+@include media-large {
+  .projects {
+    &__items {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    &__bio-image {
+      height: 70vh;
+      background-position: 20%;
+      @include transition-ease;
+    }
+  }
+
+  .contact__list {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+  }
+  .about__bio {
+    &-image {
+      height: 80vh;
+      @include transition-ease;
+      background-position: 20%;
+    }
   }
 }

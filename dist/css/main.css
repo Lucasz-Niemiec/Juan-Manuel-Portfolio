@@ -1,7 +1,7 @@
 /* variables and resets*/
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -13,8 +13,8 @@
   padding-top: 40vh;
   overflow: hidden;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-align: center;
   position: fixed;
   z-index: 1;
@@ -36,11 +36,23 @@
 .img {
   height: 100%;
   padding-top: 40vh;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(26, 26, 26, 0.6)), to(rgba(26, 26, 26, 0.6))), url("../../img/juanman portfolio hero image.jpg") center top;
-  background: linear-gradient(to right, rgba(26, 26, 26, 0.6), rgba(26, 26, 26, 0.6)), url("../../img/juanman portfolio hero image.jpg") center top;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(rgba(26, 26, 26, 0.6)),
+      to(rgba(26, 26, 26, 0.6))
+    ),
+    url("../../img/juanman portfolio hero image.jpg") center top;
+  background: linear-gradient(
+      to right,
+      rgba(26, 26, 26, 0.6),
+      rgba(26, 26, 26, 0.6)
+    ),
+    url("../../img/juanman portfolio hero image.jpg") center top;
   background-size: cover;
   -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
+  filter: grayscale(100%);
   z-index: -1;
 }
 
@@ -104,7 +116,7 @@
 
 .menu-btn__burger.open {
   -webkit-transform: rotate(720deg);
-          transform: rotate(720deg);
+  transform: rotate(720deg);
   background-color: transparent;
 }
 
@@ -138,7 +150,7 @@
 .menu-btn__scissor__close.open {
   opacity: 1;
   -webkit-transform: rotate(450deg);
-          transform: rotate(450deg);
+  transform: rotate(450deg);
   visibility: visible;
 }
 
@@ -162,14 +174,14 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   height: 100vh;
   width: 100%;
   overflow: hidden;
@@ -177,19 +189,19 @@
   list-style-type: none;
   padding-right: 1rem;
   -webkit-transform: translatex(-100%);
-          transform: translatex(-100%);
+  transform: translatex(-100%);
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
 .nav-bar .menu-nav.open {
   -webkit-transform: translatex(0);
-          transform: translatex(0);
+  transform: translatex(0);
 }
 
 .nav-bar .menu-nav__item {
   -webkit-transform: translatey(-500%);
-          transform: translatey(-500%);
+  transform: translatey(-500%);
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   visibility: hidden;
@@ -198,7 +210,7 @@
 
 .nav-bar .menu-nav__item.open {
   -webkit-transform: translatey(0%);
-          transform: translatey(0%);
+  transform: translatey(0%);
   visibility: visible;
   opacity: 1;
 }
@@ -231,59 +243,22 @@
 
 .menu-nav__item:nth-child(1) {
   -webkit-transition-delay: 0.3s;
-          transition-delay: 0.3s;
+  transition-delay: 0.3s;
 }
 
 .menu-nav__item:nth-child(2) {
   -webkit-transition-delay: 0.4s;
-          transition-delay: 0.4s;
+  transition-delay: 0.4s;
 }
 
 .menu-nav__item:nth-child(3) {
   -webkit-transition-delay: 0.5s;
-          transition-delay: 0.5s;
+  transition-delay: 0.5s;
 }
 
 .menu-nav__item:nth-child(4) {
   -webkit-transition-delay: 0.6s;
-          transition-delay: 0.6s;
-}
-
-/*MEDIA QUERY*/
-@media screen and (min-width: 768px) {
-  .menu-btn {
-    visibility: hidden;
-  }
-  .nav-bar {
-    visibility: visible;
-    -webkit-transform: translatex(0%);
-            transform: translatex(0%);
-    opacity: 1;
-  }
-  .menu-nav {
-    display: block;
-    -webkit-transform: translatex(0);
-            transform: translatex(0);
-    height: 100%;
-    width: 50%;
-    background: transparent;
-    text-align: right;
-    visibility: visible;
-  }
-  .menu-nav__item {
-    display: inline;
-    padding-right: 1.5rem;
-    -webkit-transform: translatey(0);
-            transform: translatey(0);
-    opacity: 1;
-    visibility: visible;
-  }
-  .menu-nav__link {
-    display: inline;
-    font-size: 1.5rem;
-    visibility: visible;
-    opacity: 1;
-  }
+  transition-delay: 0.6s;
 }
 
 /* ABOUT STYLES */
@@ -294,8 +269,20 @@
 .about__bio-image {
   height: 50vh;
   width: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(26, 26, 26, 0.6)), to(rgba(26, 26, 26, 0.6))), url("../../img/juanmanPortfolioHero2.jpg") center top, no-repeat;
-  background: linear-gradient(to right, rgba(26, 26, 26, 0.6), rgba(26, 26, 26, 0.6)), url("../../img/juanmanPortfolioHero2.jpg") center top, no-repeat;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(rgba(26, 26, 26, 0.6)),
+      to(rgba(26, 26, 26, 0.6))
+    ),
+    url("../../img/juanmanPortfolioHero2.jpg") center top, no-repeat;
+  background: linear-gradient(
+      to right,
+      rgba(26, 26, 26, 0.6),
+      rgba(26, 26, 26, 0.6)
+    ),
+    url("../../img/juanmanPortfolioHero2.jpg") center top, no-repeat;
   background-size: cover;
   background-repeat: no-repeat;
   display: -webkit-box;
@@ -303,14 +290,14 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 1rem;
 }
 
@@ -333,7 +320,7 @@
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
   grid-gap: 2rem;
 }
 
@@ -353,13 +340,13 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .about-footer {
   -webkit-transform: rotate(-90deg) translate(1rem, 2rem);
-          transform: rotate(-90deg) translate(1rem, 2rem);
+  transform: rotate(-90deg) translate(1rem, 2rem);
 }
 
 /* CONTACT STYLES */
@@ -373,13 +360,13 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   position: fixed;
   z-index: 1;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .contact h2 {
@@ -391,7 +378,7 @@
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
   row-gap: 1rem;
   font-size: 1.5rem;
 }
@@ -407,10 +394,22 @@
 }
 
 .projects__bio-image {
-  height: 30vh;
+  height: 40vh;
   width: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(26, 26, 26, 0.6)), to(rgba(26, 26, 26, 0.6))), url("../../img/juanmanPortfolioHero2.jpg") center top, no-repeat;
-  background: linear-gradient(to right, rgba(26, 26, 26, 0.6), rgba(26, 26, 26, 0.6)), url("../../img/juanmanPortfolioHero2.jpg") center top, no-repeat;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(rgba(26, 26, 26, 0.6)),
+      to(rgba(26, 26, 26, 0.6))
+    ),
+    url("../../img/juanmanPortfolioHero2.jpg") center top, no-repeat;
+  background: linear-gradient(
+      to right,
+      rgba(26, 26, 26, 0.6),
+      rgba(26, 26, 26, 0.6)
+    ),
+    url("../../img/juanmanPortfolioHero2.jpg") center top, no-repeat;
   background-size: cover;
   background-repeat: no-repeat;
   display: -webkit-box;
@@ -418,14 +417,14 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 1rem;
 }
 
@@ -440,7 +439,7 @@
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
   grid-gap: 1rem;
 }
 
@@ -487,8 +486,8 @@
   display: -ms-grid;
   display: grid;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-align: center;
 }
 
@@ -509,8 +508,8 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 /* MAIN STYLES */
@@ -567,6 +566,13 @@ main .social-icons a:hover {
   color: #60ff90;
 }
 
+main .social-icons a main .social-icons a:focus {
+  color: #60ff90;
+  opacity: 0.8;
+  outline: 3px solid;
+  padding: 0.1rem;
+}
+
 footer {
   margin: 0%;
   font-size: 1rem;
@@ -576,5 +582,98 @@ footer {
   text-align: right;
   padding: 1rem;
   color: #fff;
+}
+
+/*MEDIA QUERY*/
+@media screen and (min-width: 768px) {
+  header {
+    position: absolute;
+    text-align: right;
+  }
+  .menu-btn {
+    visibility: hidden;
+  }
+  .nav-bar {
+    visibility: visible;
+    -webkit-transform: translatex(0%);
+    transform: translatex(0%);
+    opacity: 1;
+    position: absolute;
+    top: 1rem;
+  }
+  .nav-bar .menu-nav {
+    display: block;
+    -webkit-transform: translatex(0);
+    transform: translatex(0);
+    height: 100%;
+    background: transparent;
+    text-align: right;
+    visibility: visible;
+  }
+  .nav-bar .menu-nav__item {
+    display: inline;
+    padding-right: 1.5rem;
+    -webkit-transform: translatey(0);
+    transform: translatey(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  .nav-bar .menu-nav__link {
+    display: inline;
+    font-size: 1.3rem;
+    visibility: visible;
+    opacity: 1;
+  }
+  .about__bio {
+    font-size: 1.5rem;
+  }
+  .about__bio-image {
+    height: 60vh;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  .projects__bio-image {
+    height: 60vh;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  .projects__items {
+    -ms-grid-columns: (1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .projects .text-secondary {
+    font-size: 3rem;
+  }
+  .contact__list {
+    -ms-grid-columns: (1fr);
+    grid-template-columns: repeat(2, 1fr);
+    -webkit-column-gap: 1rem;
+    column-gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .projects__items {
+    -ms-grid-columns: (1fr);
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .projects__bio-image {
+    height: 70vh;
+    background-position: 20%;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  .contact__list {
+    -ms-grid-columns: (1fr);
+    grid-template-columns: repeat(3, 1fr);
+    -webkit-column-gap: 1rem;
+    column-gap: 1rem;
+  }
+  .about__bio-image {
+    height: 80vh;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    background-position: 20%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
