@@ -1,6 +1,10 @@
 JUAN MANUEL DIAZ PORTFOLIO
 
-this project was created to practice sass scss, and to integarte it with html and js recently acqured knowlwdge, 
+this project was created to practice sass scss, and to integrate it with html and js recently acquired knowledge.
+
+
+ check out the site in the link below
+https://lucasz-niemiec.github.io/Juan-Manuel-Portfolio/
 
 
 
@@ -10,14 +14,10 @@ this project was created to practice sass scss, and to integarte it with html an
 
 
 
-
-
-
-
-in the development of this portfolio page the video tutorial "Sass Tutorial for Beginners - CSS With Superpowers" was used credit to freecodecamp and 
+in the development of this portfolio page the video tutorial "Sass Tutorial for Beginners - CSS With Superpowers" was used, credit to freecodecamp and 
 codeSTACKr  for the video 
 
-below there are the links to the tutorial ande authors you tube channels
+below you can find  the links to the tutorial and the  authors youtube channels
 
 Sass Tutorial for Beginners - CSS With Superpowers https://www.youtube.com/watch?v=_a5j7KoflTs
 
